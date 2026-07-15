@@ -1,16 +1,22 @@
 [build-system]
-requires = ["setuptools>=68", "wheel"]
+requires = ["setuptools>=77.0.3", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "maths-tools"
-version = "0.1.0"
-description = "A collection of mathematical tools."
+version = "0.0.2"
+description = "A simple Python package providing basic arithmetic operations."
 readme = "README.md"
-license = { text = "MIT" }
-authors = [
-    { name = "Arpit Soni" }
-]
 requires-python = ">=3.9"
+authors = [
+    { name = "Arpit Soni", email = "harshit998ops@gmail.com" }
+]
+license = "MIT"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
 
-dependencies = []
+[project.urls]
+Homepage = "https://github.com/Arpitsoni89/maths-tools"
+Issues = "https://github.com/Arpitsoni89/maths-tools/issues"
