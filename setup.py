@@ -1,3 +1,3 @@
-with open("VERSION") as f:
-    version = f.read().strip()
-  
+from pathlib import Path
+
+version = Path("VERSION").read_text().strip()
