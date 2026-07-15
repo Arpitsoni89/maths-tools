@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "easy-to-maths"
 version = "0.0.2"
 description = "A simple Python package providing basic arithmetic operations."
-readme = "README.md"
+readme = "readme.md"
 requires-python = ">=3.9"
 authors = [
     { name = "Arpit Soni", email = "harshit998ops@gmail.com" }
