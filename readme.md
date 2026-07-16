@@ -15,7 +15,7 @@ A lightweight Python package providing simple mathematical operations.
 Install the package from PyPI:
 
 ```bash
-pip install maths-tools
+pip install easy-to-maths 
 ```
 
 or
