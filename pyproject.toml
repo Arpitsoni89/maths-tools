@@ -20,5 +20,4 @@ classifiers = [
 [project.urls]
 Homepage = "https://github.com/Arpitsoni89/maths-tools"
 Issues = "https://github.com/Arpitsoni89/maths-tools/issues"
-[tool.setuptools]
-packages = ["easy_to_maths"]
+
