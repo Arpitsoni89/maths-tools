@@ -1,23 +1,73 @@
 [build-system]
-requires = ["setuptools>=77.0.3", "wheel"]
-build-backend = ["setuptools.build_meta"]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "easy-to-maths"
-version = "0.3.0"
+version = "0.2.0"
 description = "A simple Python package providing basic arithmetic operations."
 readme = "readme.md"
+readme-content-type = "text/markdown"
 requires-python = ">=3.9"
+license = { text = "MIT" }
 authors = [
     { name = "Arpit Soni", email = "harshit998ops@gmail.com" }
 ]
-license = "MIT"
+keywords = ["math", "arithmetic", "calculator", "simple-math"]
 classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
     "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 
 [project.urls]
 Homepage = "https://github.com/Arpitsoni89/maths-tools"
+Repository = "https://github.com/Arpitsoni89/maths-tools.git"
 Issues = "https://github.com/Arpitsoni89/maths-tools/issues"
+Documentation = "https://github.com/Arpitsoni89/maths-tools#readme"
 
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "black>=23.0",
+    "flake8>=6.0",
+    "mypy>=1.0",
+]
+test = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+]
+
+[tool.setuptools]
+packages = ["easy_to_maths"]
+
+[tool.setuptools.package-data]
+easy_to_maths = ["py.typed"]
+
+[tool.black]
+line-length = 100
+target-version = ["py39", "py310", "py311", "py312"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --cov=easy_to_maths --cov-report=term-missing"
+
+[tool.coverage.run]
+source = ["easy_to_maths"]
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
