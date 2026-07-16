@@ -22,7 +22,7 @@ from .maths import (
     subtraction,
 )
 
-__version__ = "0.2.0"
+__version__ = "0.3.0"
 __author__ = "Arpit Soni"
 __email__ = "harshit998ops@gmail.com"
 __license__ = "MIT"
