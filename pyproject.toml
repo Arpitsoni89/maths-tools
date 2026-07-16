@@ -1,8 +1,7 @@
 [build-system]
 requires = ["setuptools>=77.0.3", "wheel"]
 build-backend = ["setuptools.build_meta"]
-[tool.setuptools]
-packages = ["easy-to-maths"]
+
 [project]
 name = "easy-to-maths"
 version = "0.3.0"
@@ -21,3 +20,5 @@ classifiers = [
 [project.urls]
 Homepage = "https://github.com/Arpitsoni89/maths-tools"
 Issues = "https://github.com/Arpitsoni89/maths-tools/issues"
+[tool.setuptools]
+packages = ["easy_to_maths"]
