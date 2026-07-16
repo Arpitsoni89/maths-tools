@@ -1,10 +1,11 @@
 [build-system]
 requires = ["setuptools>=77.0.3", "wheel"]
 build-backend = "setuptools.build_meta"
-
+[tool.setuptools]
+packages = ["easy_to_maths"]
 [project]
 name = "easy-to-maths"
-version = "0.2.0"
+version = "0.3.0"
 description = "A simple Python package providing basic arithmetic operations."
 readme = "readme.md"
 requires-python = ">=3.9"
